@@ -50,11 +50,11 @@ export const Hero = () => {
               View My Work
             </motion.a>
             <motion.a
-              href="#contact"
+              href="/Nino_Paichadze_cv.pdf"
               className="cta-secondary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}>
-              Get In Touch
+              View CV
             </motion.a>
           </motion.div>
           <motion.div className="social-links" variants={staggerContainer}>
