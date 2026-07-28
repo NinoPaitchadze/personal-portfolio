@@ -105,10 +105,18 @@ export const Projects = () => {
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
           <h3>Tiny Wonders</h3>
-          <p>Blog website made with React and SCSS</p>
+          <p>
+            Full-stack blog platform with real-time comments via SignalR WebSockets, JWT
+            authentication with refresh tokens, role-based admin panel for article management,
+            category filtering, and Cloudinary image uploads.
+          </p>
           <div className="project-tech">
-            <span className="tag">React</span>
-            <span className="tag">Typescript</span>
+            <span className="tag">Next.js</span>
+            <span className="tag">TypeScript</span>
+            <span className="tag">SCSS</span>
+            <span className="tag">ASP.NET Core</span>
+            <span className="tag">PostgreSQL</span>
+            <span className="tag">SignalR</span>
             <span className="tag">Figma</span>
           </div>
           <motion.div className="project-links" variants={staggerContainer}>
@@ -117,11 +125,9 @@ export const Projects = () => {
               href="https://github.com/NinoPaitchadze/Tiny-Wonders-frontend">
               <i className="fab fa-github"></i>
             </motion.a>
-            {project.demo && (
-              <motion.a target="_blank" href={project.demo}>
-                <i className="fas fa-external-link-alt"></i>
-              </motion.a>
-            )}
+            <motion.a target="_blank" href="https://tiny-wonders-frontend.vercel.app/">
+              <i className="fas fa-external-link-alt"></i>
+            </motion.a>
           </motion.div>
         </motion.div>
       </motion.div>
