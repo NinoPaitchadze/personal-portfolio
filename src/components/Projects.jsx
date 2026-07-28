@@ -39,38 +39,6 @@ export const Projects = () => {
           whileHover={{ y: -10, transition: { duration: 0.2 } }}>
           <motion.div
             className="project-image"
-            style={{ backgroundImage: 'url(/projects/phoxjournal.png)' }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-          />
-          <h3>Phox-Journal</h3>
-          <p>
-            Social media app X clone using Next.js and MySQL. Allows users to login and register
-            through clerk authentication, create posts, follow other users, and send real time
-            notifications.
-          </p>
-          <div className="project-tech">
-            <span className="tag">Next.js</span>
-            <span className="tag">Docker</span>
-            <span className="tag">Tailwind CSS</span>
-          </div>
-          <motion.div className="project-links" variants={staggerContainer}>
-            <motion.a target="_blank" href="https://github.com/NinoPaitchadze/phox-journal">
-              <i className="fab fa-github"></i>
-            </motion.a>
-            {project.demo && (
-              <motion.a target="_blank" href={project.demo}>
-                <i className="fas fa-external-link-alt"></i>
-              </motion.a>
-            )}
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}>
-          <motion.div
-            className="project-image"
             style={{ backgroundImage: 'url(/projects/taskmanager.png)' }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
@@ -128,6 +96,38 @@ export const Projects = () => {
             <motion.a target="_blank" href="https://tiny-wonders-frontend.vercel.app/">
               <i className="fas fa-external-link-alt"></i>
             </motion.a>
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}>
+          <motion.div
+            className="project-image"
+            style={{ backgroundImage: 'url(/projects/phoxjournal.png)' }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          />
+          <h3>Phox-Journal</h3>
+          <p>
+            Social media app X clone using Next.js and MySQL. Allows users to login and register
+            through clerk authentication, create posts, follow other users, and send real time
+            notifications.
+          </p>
+          <div className="project-tech">
+            <span className="tag">Next.js</span>
+            <span className="tag">Docker</span>
+            <span className="tag">Tailwind CSS</span>
+          </div>
+          <motion.div className="project-links" variants={staggerContainer}>
+            <motion.a target="_blank" href="https://github.com/NinoPaitchadze/phox-journal">
+              <i className="fab fa-github"></i>
+            </motion.a>
+            {project.demo && (
+              <motion.a target="_blank" href={project.demo}>
+                <i className="fas fa-external-link-alt"></i>
+              </motion.a>
+            )}
           </motion.div>
         </motion.div>
       </motion.div>
