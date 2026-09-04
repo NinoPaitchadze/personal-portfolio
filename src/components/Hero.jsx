@@ -90,7 +90,7 @@ export const Hero = () => {
     string Role => " Full-Stack Developer";
 
     string[] Languages =>
-        ["C#", "JavaScript", "TypeScript", "SQL"];
+        ["C#", "TypeScript", "SQL"];
 
     string[] Backend =>
         ["ASP.NET Core", "Entity Framework Core","swagger"];
@@ -112,7 +112,7 @@ export const Hero = () => {
             animate={{ y: [0, -10, 0], rotate: [0, 2, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}>
             <div className="card-content">
-              <span className="card-text">Building scalable web applications</span>
+              <span className="card-text">Building applications</span>
             </div>
           </motion.div>
         </motion.div>
